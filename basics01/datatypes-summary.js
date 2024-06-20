@@ -46,6 +46,31 @@ console.log(typeof bigNumber); // undefined
 console.log( typeof outsideTemp ); // object
 console.log( typeof scoreValue); // number
 
+// Stack ( primitive)  Heap ( Non primitive) in stack we get copy and heap we get reference(changes made in original)
+
+let myYoutubename = "JanviChoudharydotcom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename); // Janvichoudharydotcom ( so it is same as before as changes are made in copy not in original one)
+console.log(anothername); // chaiaurcode
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl.com"
+}
+
+let userTwo = userOne
+userTwo.email = " Janvi@google.com" // accesed and changed the email of user
+console.log(userOne.email); // Janvi@google.com
+console.log(userTwo.email); // Janvi@google.com
+
+
+
+
+
+
 /*
 typeof val => Result
 Undefined => 'undefined'
