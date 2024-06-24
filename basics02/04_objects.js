@@ -65,3 +65,33 @@ const obj4 = {5: "a", 6: "b"}
           console.log(Object.entries(tinderUser));  // [ '123abc', 'Sammy', false ]
 
           console.log(tinderUser.hasOwnProperty('isLoggedIn')); // true
+
+          // objects destructuring
+
+          const course = {
+            coursename: "js in hindi",
+            price: "999",
+            courseInstructor: "Janvi"
+        }
+
+        // course.courseInstructor   writing . again while accessing objects
+
+     const {courseInstructor: instructor} = course     // {} deconstructing
+
+  // console.log(courseInstructor);   Janvi
+    console.log(instructor);       // Janvi
+
+        // API        value come from  backend and we write it  . at starting value comes in xml structure , but now in JSON 
+
+ // Api in object form
+  // {  ; keys bhi string hogi and value bhi string hogi
+  //     "name": "hitesh",
+  //     "coursename": "js in hindi",
+  //     "price": "free"
+ // }
+
+[ // API in array format.... in array there are objects
+    {},
+    {},
+    {}
+]
